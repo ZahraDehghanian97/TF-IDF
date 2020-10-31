@@ -11,7 +11,6 @@ judgmentPath = 'Dataset\Judgement.txt'
 resultPath = 'Dataset\Result.txt'
 retrievalPath = 'Dataset\Retrieval.txt'
 
-
 # this func is used to parse the corpus file, it returns array of DID, Corpus, distinct words in all documents, and
 # count of words in each document
 
