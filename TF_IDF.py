@@ -1,7 +1,6 @@
 from nltk.tokenize import word_tokenize
 import nltk
 import numpy as np
-import pandas as pd
 from scipy import spatial as spatial
 
 # this part defines path of data files
@@ -113,23 +112,23 @@ def parseJudgment(path):
 
 # this function calculates term frequency and stores it array called TF_IDF_array
 def calculate_TF(type, normalize, text, array):
-    TF_IDF_array = array
+    TF_IDF_array = np.array(array)
     docID = 0
-
+    flag = True
+    if type == 2 : flag = False
     for doc in text:
-        words = word_tokenize(doc)
-        for word in words:
-            i = np.where(distinct == word)
-            TF_IDF_array[i, docID] += 1
-            if (type == 2) and (TF_IDF_array[i, docID] > 0):
-                TF_IDF_array[i, docID] = 1
+        words = np.array(word_tokenize(doc))
+        distinctID = 0
+        for word in distinct:
+            i = np.where(words == word)
+            if flag :
+                TF_IDF_array[distinctID, docID] = len(i[0])
+            else :
+                if len(i[0])>0 : TF_IDF_array[distinctID, docID] = 1
+            if normalize == 1:
+                TF_IDF_array[distinctID, docID] /= len(words)
+            distinctID += 1
         docID += 1
-    if normalize == 1:
-        # normalization step
-        tmp = 0
-        for doc in DID:
-            TF_IDF_array[:, tmp] /= doc_length[tmp]
-            tmp += 1
     return TF_IDF_array
 
 
@@ -176,10 +175,12 @@ def Query(counter):
 
 # this func evaluates given results based on gold data with precision@k measure
 def evaluation(result, gold, k):
+
     tmp = 0
     for i in range(0, k):
         if result[i][0] in gold:
             tmp += 1
+        print( str(result[i][0]))
     return (tmp / k)
 
 
@@ -238,7 +239,7 @@ print("built array to save result")
 
 # calculate TF_IDF array for doc and query file
 type = 1  # 1 == count term frequency  2 == binary term frequency
-normalize = 0  # 0 == not normalize tf   1== normalize tf
+normalize = 1  # 0 == not normalize tf   1== normalize tf
 TF_IDF_array = calculate_TF(type, normalize, main_text, TF_IDF_array)
 TF_IDF_array_query = calculate_TF(type, normalize, main_text_query, TF_IDF_array_query)
 print("calculating TF finished")
