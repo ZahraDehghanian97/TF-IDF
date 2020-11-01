@@ -1,135 +1,450 @@
 
-precision @ 5  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
-precision @ 10  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
-precision @ 20  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 5  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 10  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 20  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 5  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 10  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 20  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 5  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 10  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 20  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 5  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 10  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 20  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 5  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 10  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
-
-precision @ 20  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
-precision @ 5  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
-precision @ 10  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
-precision @ 20  for QID 6  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 7  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 8  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 9  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 5  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 10  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
 
 precision @ 20  for QID 10  is: 0.0 
-[(1s1 , 0)(2s1 , 0)(3s1 , 0)(4s1 , 0)(5s1 , 0)(6s1 , 0)(7s1 , 0)(8s1 , 0)(9s1 , 0)(10s1 , 0)(11s1 , 0)(12s1 , 0)(13s1 , 0)(14s1 , 0)(15s1 , 0)(16s1 , 0)(17s1 , 0)(18s1 , 0)(19s1 , 0)(20s1 , 0)]
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID   is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , nan)(2s1 , nan)(3s1 , nan)(4s1 , nan)(5s1 , nan)(6s1 , nan)(7s1 , nan)(8s1 , nan)(9s1 , nan)(10s1 , nan)(11s1 , nan)(12s1 , nan)(13s1 , nan)(14s1 , nan)(15s1 , nan)(16s1 , nan)(17s1 , nan)(18s1 , nan)(19s1 , nan)(20s1 , nan)]
+
+precision @ 5  for QID   is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.9999883061415874)(27s1 , 0.9999857238214709)(66s1 , 0.9999512153250336)(24s1 , 0.9999262528944025)(30s1 , 0.9999193785332944)(28s1 , 0.9999187825295035)(60s1 , 0.9999123455800627)(83s1 , 0.9999040624245417)(78s1 , 0.9999038180076372)(116s1 , 0.9998971799282222)(6s1 , 0.9998891479805709)(100s1 , 0.999887797051569)(105s1 , 0.9998712446445808)(91s1 , 0.999865458691243)(50s1 , 0.9998365571455505)(26s1 , 0.9998310717168108)(99s1 , 0.9998285955668241)(104s1 , 0.9997901746620863)(106s1 , 0.9997824760423549)]
+
+precision @ 10  for QID   is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.9999883061415874)(27s1 , 0.9999857238214709)(66s1 , 0.9999512153250336)(24s1 , 0.9999262528944025)(30s1 , 0.9999193785332944)(28s1 , 0.9999187825295035)(60s1 , 0.9999123455800627)(83s1 , 0.9999040624245417)(78s1 , 0.9999038180076372)(116s1 , 0.9998971799282222)(6s1 , 0.9998891479805709)(100s1 , 0.999887797051569)(105s1 , 0.9998712446445808)(91s1 , 0.999865458691243)(50s1 , 0.9998365571455505)(26s1 , 0.9998310717168108)(99s1 , 0.9998285955668241)(104s1 , 0.9997901746620863)(106s1 , 0.9997824760423549)]
+
+precision @ 20  for QID   is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.9999883061415874)(27s1 , 0.9999857238214709)(66s1 , 0.9999512153250336)(24s1 , 0.9999262528944025)(30s1 , 0.9999193785332944)(28s1 , 0.9999187825295035)(60s1 , 0.9999123455800627)(83s1 , 0.9999040624245417)(78s1 , 0.9999038180076372)(116s1 , 0.9998971799282222)(6s1 , 0.9998891479805709)(100s1 , 0.999887797051569)(105s1 , 0.9998712446445808)(91s1 , 0.999865458691243)(50s1 , 0.9998365571455505)(26s1 , 0.9998310717168108)(99s1 , 0.9998285955668241)(104s1 , 0.9997901746620863)(106s1 , 0.9997824760423549)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.999954606165497)(39s1 , 0.9999476018413598)(60s1 , 0.9999319476926827)(28s1 , 0.9999161158449053)(105s1 , 0.9998967406779794)(42s1 , 0.9998848963214875)(50s1 , 0.9998729121320564)(100s1 , 0.9998673297188102)(116s1 , 0.9998594194293826)(58s1 , 0.9998557643143043)(23s1 , 0.9998397151093016)(46s1 , 0.9997995801804287)(26s1 , 0.9997969475996438)(101s1 , 0.9997894225934953)(48s1 , 0.999771551003593)(68s1 , 0.999768609914451)(93s1 , 0.9997251564768108)(76s1 , 0.999696017469088)(6s1 , 0.9996824039602489)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.999954606165497)(39s1 , 0.9999476018413598)(60s1 , 0.9999319476926827)(28s1 , 0.9999161158449053)(105s1 , 0.9998967406779794)(42s1 , 0.9998848963214875)(50s1 , 0.9998729121320564)(100s1 , 0.9998673297188102)(116s1 , 0.9998594194293826)(58s1 , 0.9998557643143043)(23s1 , 0.9998397151093016)(46s1 , 0.9997995801804287)(26s1 , 0.9997969475996438)(101s1 , 0.9997894225934953)(48s1 , 0.999771551003593)(68s1 , 0.999768609914451)(93s1 , 0.9997251564768108)(76s1 , 0.999696017469088)(6s1 , 0.9996824039602489)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.999954606165497)(39s1 , 0.9999476018413598)(60s1 , 0.9999319476926827)(28s1 , 0.9999161158449053)(105s1 , 0.9998967406779794)(42s1 , 0.9998848963214875)(50s1 , 0.9998729121320564)(100s1 , 0.9998673297188102)(116s1 , 0.9998594194293826)(58s1 , 0.9998557643143043)(23s1 , 0.9998397151093016)(46s1 , 0.9997995801804287)(26s1 , 0.9997969475996438)(101s1 , 0.9997894225934953)(48s1 , 0.999771551003593)(68s1 , 0.999768609914451)(93s1 , 0.9997251564768108)(76s1 , 0.999696017469088)(6s1 , 0.9996824039602489)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(28s1 , 0.999928345626501)(48s1 , 0.9996288918189846)(83s1 , 0.999590100027137)(78s1 , 0.9995470743382747)(75s1 , 0.9995262469454389)(58s1 , 0.999366428756792)(87s1 , 0.9993023032486249)(96s1 , 0.9992850925261341)(99s1 , 0.9992737378838531)(90s1 , 0.9991883654457622)(50s1 , 0.9991663045294348)(23s1 , 0.9991089778358169)(64s1 , 0.999102211666676)(3s1 , 0.9990727723725965)(65s1 , 0.9989600608071487)(24s1 , 0.998902114147999)(27s1 , 0.9987919461289808)(101s1 , 0.9987635876819301)(85s1 , 0.9987059545411775)(60s1 , 0.9986625222240296)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(28s1 , 0.999928345626501)(48s1 , 0.9996288918189846)(83s1 , 0.999590100027137)(78s1 , 0.9995470743382747)(75s1 , 0.9995262469454389)(58s1 , 0.999366428756792)(87s1 , 0.9993023032486249)(96s1 , 0.9992850925261341)(99s1 , 0.9992737378838531)(90s1 , 0.9991883654457622)(50s1 , 0.9991663045294348)(23s1 , 0.9991089778358169)(64s1 , 0.999102211666676)(3s1 , 0.9990727723725965)(65s1 , 0.9989600608071487)(24s1 , 0.998902114147999)(27s1 , 0.9987919461289808)(101s1 , 0.9987635876819301)(85s1 , 0.9987059545411775)(60s1 , 0.9986625222240296)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(28s1 , 0.999928345626501)(48s1 , 0.9996288918189846)(83s1 , 0.999590100027137)(78s1 , 0.9995470743382747)(75s1 , 0.9995262469454389)(58s1 , 0.999366428756792)(87s1 , 0.9993023032486249)(96s1 , 0.9992850925261341)(99s1 , 0.9992737378838531)(90s1 , 0.9991883654457622)(50s1 , 0.9991663045294348)(23s1 , 0.9991089778358169)(64s1 , 0.999102211666676)(3s1 , 0.9990727723725965)(65s1 , 0.9989600608071487)(24s1 , 0.998902114147999)(27s1 , 0.9987919461289808)(101s1 , 0.9987635876819301)(85s1 , 0.9987059545411775)(60s1 , 0.9986625222240296)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(77s1 , 1.0)(28s1 , 0.9999089226239003)(26s1 , 0.9998117868176817)(58s1 , 0.9997052735815248)(66s1 , 0.999541156158708)(78s1 , 0.999489677671683)(75s1 , 0.999407822406214)(99s1 , 0.9993915010290764)(30s1 , 0.9993157746862955)(105s1 , 0.9993047862429735)(42s1 , 0.9978309364396347)(27s1 , 0.997377431303416)(83s1 , 0.9972413545226726)(115s1 , 0.9969263007894726)(76s1 , 0.9963720517820008)(3s1 , 0.9962900837276706)(17s1 , 0.9961865579239566)(100s1 , 0.9957936590301502)(6s1 , 0.9957469450736437)(32s1 , 0.9956008709141757)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(77s1 , 1.0)(28s1 , 0.9999089226239003)(26s1 , 0.9998117868176817)(58s1 , 0.9997052735815248)(66s1 , 0.999541156158708)(78s1 , 0.999489677671683)(75s1 , 0.999407822406214)(99s1 , 0.9993915010290764)(30s1 , 0.9993157746862955)(105s1 , 0.9993047862429735)(42s1 , 0.9978309364396347)(27s1 , 0.997377431303416)(83s1 , 0.9972413545226726)(115s1 , 0.9969263007894726)(76s1 , 0.9963720517820008)(3s1 , 0.9962900837276706)(17s1 , 0.9961865579239566)(100s1 , 0.9957936590301502)(6s1 , 0.9957469450736437)(32s1 , 0.9956008709141757)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(77s1 , 1.0)(28s1 , 0.9999089226239003)(26s1 , 0.9998117868176817)(58s1 , 0.9997052735815248)(66s1 , 0.999541156158708)(78s1 , 0.999489677671683)(75s1 , 0.999407822406214)(99s1 , 0.9993915010290764)(30s1 , 0.9993157746862955)(105s1 , 0.9993047862429735)(42s1 , 0.9978309364396347)(27s1 , 0.997377431303416)(83s1 , 0.9972413545226726)(115s1 , 0.9969263007894726)(76s1 , 0.9963720517820008)(3s1 , 0.9962900837276706)(17s1 , 0.9961865579239566)(100s1 , 0.9957936590301502)(6s1 , 0.9957469450736437)(32s1 , 0.9956008709141757)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , 1.0)(2s1 , 1.0)(3s1 , 1.0)(4s1 , 1.0)(5s1 , 1.0)(6s1 , 1.0)(7s1 , 1.0)(8s1 , 1.0)(9s1 , 1.0)(10s1 , 1.0)(11s1 , 1.0)(12s1 , 1.0)(13s1 , 1.0)(14s1 , 1.0)(15s1 , 1.0)(16s1 , 1.0)(17s1 , 1.0)(19s1 , 1.0)(20s1 , 1.0)(21s1 , 1.0)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , 1.0)(2s1 , 1.0)(3s1 , 1.0)(4s1 , 1.0)(5s1 , 1.0)(6s1 , 1.0)(7s1 , 1.0)(8s1 , 1.0)(9s1 , 1.0)(10s1 , 1.0)(11s1 , 1.0)(12s1 , 1.0)(13s1 , 1.0)(14s1 , 1.0)(15s1 , 1.0)(16s1 , 1.0)(17s1 , 1.0)(19s1 , 1.0)(20s1 , 1.0)(21s1 , 1.0)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , 1.0)(2s1 , 1.0)(3s1 , 1.0)(4s1 , 1.0)(5s1 , 1.0)(6s1 , 1.0)(7s1 , 1.0)(8s1 , 1.0)(9s1 , 1.0)(10s1 , 1.0)(11s1 , 1.0)(12s1 , 1.0)(13s1 , 1.0)(14s1 , 1.0)(15s1 , 1.0)(16s1 , 1.0)(17s1 , 1.0)(19s1 , 1.0)(20s1 , 1.0)(21s1 , 1.0)]
+
+precision @ 5  for QID   is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.9999883061415874)(27s1 , 0.9999857238214709)(66s1 , 0.9999512153250336)(24s1 , 0.9999262528944025)(30s1 , 0.9999193785332944)(28s1 , 0.9999187825295035)(60s1 , 0.9999123455800627)(83s1 , 0.9999040624245417)(78s1 , 0.9999038180076372)(116s1 , 0.9998971799282222)(6s1 , 0.9998891479805709)(100s1 , 0.999887797051569)(105s1 , 0.9998712446445808)(91s1 , 0.999865458691243)(50s1 , 0.9998365571455505)(26s1 , 0.9998310717168108)(99s1 , 0.9998285955668241)(104s1 , 0.9997901746620863)(106s1 , 0.9997824760423549)]
+
+precision @ 10  for QID   is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.9999883061415874)(27s1 , 0.9999857238214709)(66s1 , 0.9999512153250336)(24s1 , 0.9999262528944025)(30s1 , 0.9999193785332944)(28s1 , 0.9999187825295035)(60s1 , 0.9999123455800627)(83s1 , 0.9999040624245417)(78s1 , 0.9999038180076372)(116s1 , 0.9998971799282222)(6s1 , 0.9998891479805709)(100s1 , 0.999887797051569)(105s1 , 0.9998712446445808)(91s1 , 0.999865458691243)(50s1 , 0.9998365571455505)(26s1 , 0.9998310717168108)(99s1 , 0.9998285955668241)(104s1 , 0.9997901746620863)(106s1 , 0.9997824760423549)]
+
+precision @ 20  for QID   is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.9999883061415874)(27s1 , 0.9999857238214709)(66s1 , 0.9999512153250336)(24s1 , 0.9999262528944025)(30s1 , 0.9999193785332944)(28s1 , 0.9999187825295035)(60s1 , 0.9999123455800627)(83s1 , 0.9999040624245417)(78s1 , 0.9999038180076372)(116s1 , 0.9998971799282222)(6s1 , 0.9998891479805709)(100s1 , 0.999887797051569)(105s1 , 0.9998712446445808)(91s1 , 0.999865458691243)(50s1 , 0.9998365571455505)(26s1 , 0.9998310717168108)(99s1 , 0.9998285955668241)(104s1 , 0.9997901746620863)(106s1 , 0.9997824760423549)]
+
+precision @ 5  for QID 7  is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.999954606165497)(39s1 , 0.9999476018413598)(60s1 , 0.9999319476926827)(28s1 , 0.9999161158449053)(105s1 , 0.9998967406779794)(42s1 , 0.9998848963214875)(50s1 , 0.9998729121320564)(100s1 , 0.9998673297188102)(116s1 , 0.9998594194293826)(58s1 , 0.9998557643143043)(23s1 , 0.9998397151093016)(46s1 , 0.9997995801804287)(26s1 , 0.9997969475996438)(101s1 , 0.9997894225934953)(48s1 , 0.999771551003593)(68s1 , 0.999768609914451)(93s1 , 0.9997251564768108)(76s1 , 0.999696017469088)(6s1 , 0.9996824039602489)]
+
+precision @ 10  for QID 7  is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.999954606165497)(39s1 , 0.9999476018413598)(60s1 , 0.9999319476926827)(28s1 , 0.9999161158449053)(105s1 , 0.9998967406779794)(42s1 , 0.9998848963214875)(50s1 , 0.9998729121320564)(100s1 , 0.9998673297188102)(116s1 , 0.9998594194293826)(58s1 , 0.9998557643143043)(23s1 , 0.9998397151093016)(46s1 , 0.9997995801804287)(26s1 , 0.9997969475996438)(101s1 , 0.9997894225934953)(48s1 , 0.999771551003593)(68s1 , 0.999768609914451)(93s1 , 0.9997251564768108)(76s1 , 0.999696017469088)(6s1 , 0.9996824039602489)]
+
+precision @ 20  for QID 7  is: 0.0 
+[(77s1 , 1.0)(96s1 , 0.999954606165497)(39s1 , 0.9999476018413598)(60s1 , 0.9999319476926827)(28s1 , 0.9999161158449053)(105s1 , 0.9998967406779794)(42s1 , 0.9998848963214875)(50s1 , 0.9998729121320564)(100s1 , 0.9998673297188102)(116s1 , 0.9998594194293826)(58s1 , 0.9998557643143043)(23s1 , 0.9998397151093016)(46s1 , 0.9997995801804287)(26s1 , 0.9997969475996438)(101s1 , 0.9997894225934953)(48s1 , 0.999771551003593)(68s1 , 0.999768609914451)(93s1 , 0.9997251564768108)(76s1 , 0.999696017469088)(6s1 , 0.9996824039602489)]
+
+precision @ 5  for QID 8  is: 0.0 
+[(28s1 , 0.999928345626501)(48s1 , 0.9996288918189846)(83s1 , 0.999590100027137)(78s1 , 0.9995470743382747)(75s1 , 0.9995262469454389)(58s1 , 0.999366428756792)(87s1 , 0.9993023032486249)(96s1 , 0.9992850925261341)(99s1 , 0.9992737378838531)(90s1 , 0.9991883654457622)(50s1 , 0.9991663045294348)(23s1 , 0.9991089778358169)(64s1 , 0.999102211666676)(3s1 , 0.9990727723725965)(65s1 , 0.9989600608071487)(24s1 , 0.998902114147999)(27s1 , 0.9987919461289808)(101s1 , 0.9987635876819301)(85s1 , 0.9987059545411775)(60s1 , 0.9986625222240296)]
+
+precision @ 10  for QID 8  is: 0.0 
+[(28s1 , 0.999928345626501)(48s1 , 0.9996288918189846)(83s1 , 0.999590100027137)(78s1 , 0.9995470743382747)(75s1 , 0.9995262469454389)(58s1 , 0.999366428756792)(87s1 , 0.9993023032486249)(96s1 , 0.9992850925261341)(99s1 , 0.9992737378838531)(90s1 , 0.9991883654457622)(50s1 , 0.9991663045294348)(23s1 , 0.9991089778358169)(64s1 , 0.999102211666676)(3s1 , 0.9990727723725965)(65s1 , 0.9989600608071487)(24s1 , 0.998902114147999)(27s1 , 0.9987919461289808)(101s1 , 0.9987635876819301)(85s1 , 0.9987059545411775)(60s1 , 0.9986625222240296)]
+
+precision @ 20  for QID 8  is: 0.0 
+[(28s1 , 0.999928345626501)(48s1 , 0.9996288918189846)(83s1 , 0.999590100027137)(78s1 , 0.9995470743382747)(75s1 , 0.9995262469454389)(58s1 , 0.999366428756792)(87s1 , 0.9993023032486249)(96s1 , 0.9992850925261341)(99s1 , 0.9992737378838531)(90s1 , 0.9991883654457622)(50s1 , 0.9991663045294348)(23s1 , 0.9991089778358169)(64s1 , 0.999102211666676)(3s1 , 0.9990727723725965)(65s1 , 0.9989600608071487)(24s1 , 0.998902114147999)(27s1 , 0.9987919461289808)(101s1 , 0.9987635876819301)(85s1 , 0.9987059545411775)(60s1 , 0.9986625222240296)]
+
+precision @ 5  for QID 9  is: 0.0 
+[(77s1 , 1.0)(28s1 , 0.9999089226239003)(26s1 , 0.9998117868176817)(58s1 , 0.9997052735815248)(66s1 , 0.999541156158708)(78s1 , 0.999489677671683)(75s1 , 0.999407822406214)(99s1 , 0.9993915010290764)(30s1 , 0.9993157746862955)(105s1 , 0.9993047862429735)(42s1 , 0.9978309364396347)(27s1 , 0.997377431303416)(83s1 , 0.9972413545226726)(115s1 , 0.9969263007894726)(76s1 , 0.9963720517820008)(3s1 , 0.9962900837276706)(17s1 , 0.9961865579239566)(100s1 , 0.9957936590301502)(6s1 , 0.9957469450736437)(32s1 , 0.9956008709141757)]
+
+precision @ 10  for QID 9  is: 0.0 
+[(77s1 , 1.0)(28s1 , 0.9999089226239003)(26s1 , 0.9998117868176817)(58s1 , 0.9997052735815248)(66s1 , 0.999541156158708)(78s1 , 0.999489677671683)(75s1 , 0.999407822406214)(99s1 , 0.9993915010290764)(30s1 , 0.9993157746862955)(105s1 , 0.9993047862429735)(42s1 , 0.9978309364396347)(27s1 , 0.997377431303416)(83s1 , 0.9972413545226726)(115s1 , 0.9969263007894726)(76s1 , 0.9963720517820008)(3s1 , 0.9962900837276706)(17s1 , 0.9961865579239566)(100s1 , 0.9957936590301502)(6s1 , 0.9957469450736437)(32s1 , 0.9956008709141757)]
+
+precision @ 20  for QID 9  is: 0.0 
+[(77s1 , 1.0)(28s1 , 0.9999089226239003)(26s1 , 0.9998117868176817)(58s1 , 0.9997052735815248)(66s1 , 0.999541156158708)(78s1 , 0.999489677671683)(75s1 , 0.999407822406214)(99s1 , 0.9993915010290764)(30s1 , 0.9993157746862955)(105s1 , 0.9993047862429735)(42s1 , 0.9978309364396347)(27s1 , 0.997377431303416)(83s1 , 0.9972413545226726)(115s1 , 0.9969263007894726)(76s1 , 0.9963720517820008)(3s1 , 0.9962900837276706)(17s1 , 0.9961865579239566)(100s1 , 0.9957936590301502)(6s1 , 0.9957469450736437)(32s1 , 0.9956008709141757)]
+
+precision @ 5  for QID 10  is: 0.0 
+[(1s1 , 1.0)(2s1 , 1.0)(3s1 , 1.0)(4s1 , 1.0)(5s1 , 1.0)(6s1 , 1.0)(7s1 , 1.0)(8s1 , 1.0)(9s1 , 1.0)(10s1 , 1.0)(11s1 , 1.0)(12s1 , 1.0)(13s1 , 1.0)(14s1 , 1.0)(15s1 , 1.0)(16s1 , 1.0)(17s1 , 1.0)(19s1 , 1.0)(20s1 , 1.0)(21s1 , 1.0)]
+
+precision @ 10  for QID 10  is: 0.0 
+[(1s1 , 1.0)(2s1 , 1.0)(3s1 , 1.0)(4s1 , 1.0)(5s1 , 1.0)(6s1 , 1.0)(7s1 , 1.0)(8s1 , 1.0)(9s1 , 1.0)(10s1 , 1.0)(11s1 , 1.0)(12s1 , 1.0)(13s1 , 1.0)(14s1 , 1.0)(15s1 , 1.0)(16s1 , 1.0)(17s1 , 1.0)(19s1 , 1.0)(20s1 , 1.0)(21s1 , 1.0)]
+
+precision @ 20  for QID 10  is: 0.0 
+[(1s1 , 1.0)(2s1 , 1.0)(3s1 , 1.0)(4s1 , 1.0)(5s1 , 1.0)(6s1 , 1.0)(7s1 , 1.0)(8s1 , 1.0)(9s1 , 1.0)(10s1 , 1.0)(11s1 , 1.0)(12s1 , 1.0)(13s1 , 1.0)(14s1 , 1.0)(15s1 , 1.0)(16s1 , 1.0)(17s1 , 1.0)(19s1 , 1.0)(20s1 , 1.0)(21s1 , 1.0)]

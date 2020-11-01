@@ -48,7 +48,7 @@ def parseText(path):
     list.append(document)
     corpus += document
     nltk_tokens = nltk.word_tokenize(corpus)
-    distinct = set(nltk_tokens)
+    distinct = np.array(np.unique(nltk_tokens))
     doc_length.append(len(nltk.word_tokenize(document)))
     return list, doc_info, distinct, doc_length
 
@@ -112,12 +112,14 @@ def parseJudgment(path):
 
 
 # this function calculates term frequency and stores it array called TF_IDF_array
-def calculate_TF(type, normalize, text, TF_IDF_array):
+def calculate_TF(type, normalize, text, array):
+    TF_IDF_array = array
     docID = 0
+
     for doc in text:
         words = word_tokenize(doc)
         for word in words:
-            i, = np.where(distinct == word)
+            i = np.where(distinct == word)
             TF_IDF_array[i, docID] += 1
             if (type == 2) and (TF_IDF_array[i, docID] > 0):
                 TF_IDF_array[i, docID] = 1
