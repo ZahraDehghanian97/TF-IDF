@@ -97,7 +97,7 @@ def parseQuery(queryPath):
     description = extractTag(queryPath, 'description')
     narrative = extractTag(queryPath, 'narrative')
     main_text_query = combineArrays(title, description, narrative)
-    return QID, main_text_query
+    return QID, title, main_text_query
 
 
 # this func reads judgments from given file
@@ -111,23 +111,22 @@ def parseJudgment(path):
 
 
 # this function calculates term frequency and stores it array called TF_IDF_array
+# type true count - type false binary
 def calculate_TF(type, normalize, text, array):
     TF_IDF_array = np.array(array)
     docID = 0
     for doc in text:
         words = (word_tokenize(doc))
         l = len(words)
-        distinctID = 0
         if type:
-            for d in distinct:
-                TF_IDF_array[distinctID, docID] = words.count(d)
-                if normalize: TF_IDF_array[distinctID, docID] /= l
-                distinctID += 1
+            for word in words:
+                i, = np.where(distinct == word)
+                TF_IDF_array[i, docID] += 1
         else:
-            for d in distinct:
-                if words.count(d) > 0: TF_IDF_array[distinctID, docID] = 1
-                if normalize: TF_IDF_array[distinctID, docID] /= l
-                distinctID += 1
+            for word in words:
+                i, = np.where(distinct == word)
+                if TF_IDF_array[i, docID]==0 : TF_IDF_array[i, docID] = 1
+        if normalize: TF_IDF_array[:, docID] /= l
         docID += 1
     return TF_IDF_array
 
@@ -176,7 +175,7 @@ def Query(counter):
 # this func evaluates given results based on gold data with precision@k measure
 def evaluation(result, gold, k):
     tmp = 0
-    if k > len(result) : k = len(result)
+    if k > len(result): k = len(result)
     for i in range(0, k):
         if result[i][0] in gold:
             tmp += 1
@@ -226,9 +225,18 @@ def evalquery(precisions):
 # read files and parse them
 main_text, DID, distinct, doc_length = parseText(retrievalPath)
 main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
-QID, main_text_query = parseQuery(queryPath)
+QID, title_query, main_text_query = parseQuery(queryPath)
 judge = parseJudgment(judgmentPath)
 print("parsing file finished")
+
+# report size of file
+n_docs = len(main_text)
+distinct = np.transpose(list(distinct))
+print("number of docs: " + str(n_docs))
+print("number of distinct words: " + str(len(distinct)))
+print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
+print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
+print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
 
 # create a TF-IDF array for document and query
 TF_IDF_array = np.zeros([len(distinct), np.shape(DID)[0]])
@@ -243,7 +251,7 @@ normalize = True  # False == not normalize tf   True== normalize tf
 TF_IDF_array = calculate_TF(type, normalize, main_text, TF_IDF_array)
 TF_IDF_array_query = calculate_TF(type, normalize, main_text_query, TF_IDF_array_query)
 print("calculating TF finished")
-TF_array_corpus = calculate_TF(type,normalize, main_text_corpus, TF_array_corpus)
+TF_array_corpus = calculate_TF(type, normalize, main_text_corpus, TF_array_corpus)
 calculate_IDF(TF_array_corpus, main_text_corpus)
 print("calculating IDF finished")
 TF_IDF_array = calculate_TF_IDF(TF_IDF_array)
@@ -252,5 +260,5 @@ print("calculating TF_IDF finished")
 
 # evaluate queries using p@5 p@10 p@20
 print("start evaluation")
-precision = [5,10,20,30]
+precision = [5, 10]
 evalquery(precision)
