@@ -1,8 +1,5 @@
-import numpy as np
-z = np.array([1,2,3,4,5])
+import nltk as n
+z = "z s d"
+z= n.word_tokenize(z)
 d = [2,3,3]
-i = np.where(z==d[0])
-print(i)
-c = np.array([0,0,0,0,0])
-c[i] += 1
-print(c)
+print(z.count('z'))

@@ -10,6 +10,7 @@ judgmentPath = 'Dataset\Judgement.txt'
 resultPath = 'Dataset\Result.txt'
 retrievalPath = 'Dataset\Retrieval.txt'
 
+
 # this func is used to parse the corpus file, it returns array of DID, Corpus, distinct words in all documents, and
 # count of words in each document
 
@@ -89,7 +90,6 @@ def combineArrays(title, description, narrative):
     return res
 
 
-
 # this function is used to parse Query file
 def parseQuery(queryPath):
     QID = extractTag(queryPath, 'QID')
@@ -114,20 +114,20 @@ def parseJudgment(path):
 def calculate_TF(type, normalize, text, array):
     TF_IDF_array = np.array(array)
     docID = 0
-    flag = True
-    if type == 2 : flag = False
     for doc in text:
-        words = np.array(word_tokenize(doc))
+        words = (word_tokenize(doc))
+        l = len(words)
         distinctID = 0
-        for word in distinct:
-            i = np.where(words == word)
-            if flag :
-                TF_IDF_array[distinctID, docID] = len(i[0])
-            else :
-                if len(i[0])>0 : TF_IDF_array[distinctID, docID] = 1
-            if normalize == 1:
-                TF_IDF_array[distinctID, docID] /= len(words)
-            distinctID += 1
+        if type:
+            for d in distinct:
+                TF_IDF_array[distinctID, docID] = words.count(d)
+                if normalize: TF_IDF_array[distinctID, docID] /= l
+                distinctID += 1
+        else:
+            for d in distinct:
+                if words.count(d) > 0: TF_IDF_array[distinctID, docID] = 1
+                if normalize: TF_IDF_array[distinctID, docID] /= l
+                distinctID += 1
         docID += 1
     return TF_IDF_array
 
@@ -139,7 +139,7 @@ def calculate_IDF(TF_IDF_array, main_text):
         df = np.count_nonzero(TF_IDF_array[term, :])
         if df != 0:
             df = np.math.log(float(len(main_text)) / df)
-        IDF[term, 0] = df
+            IDF[term, 0] = df
     return
 
 
@@ -170,17 +170,17 @@ def Query(counter):
         doc_vec = TF_IDF_array[:, index]
         results.append((doc, spatial.distance.cosine(q_vec, doc_vec)))
         index += 1
-    return sorted(results, key=lambda t: t[1], reverse=True)
+    return sorted(results, key=lambda t: t[1])
 
 
 # this func evaluates given results based on gold data with precision@k measure
 def evaluation(result, gold, k):
-
     tmp = 0
+    if k > len(result) : k = len(result)
     for i in range(0, k):
         if result[i][0] in gold:
             tmp += 1
-        print( str(result[i][0]))
+        print(str(result[i][0]))
     return (tmp / k)
 
 
@@ -218,7 +218,7 @@ def evalquery(precisions):
             f.write("\n")
             print(template % (precision, QID[query_ID], precisionAtK))
             f.write(template % (precision, QID[query_ID], precisionAtK))
-            writeToFile(f, res[:20])
+            writeToFile(f, res[:precision])
         query_ID += 1
     return
 
@@ -238,12 +238,12 @@ IDF = np.zeros([len(distinct), 1])
 print("built array to save result")
 
 # calculate TF_IDF array for doc and query file
-type = 1  # 1 == count term frequency  2 == binary term frequency
-normalize = 1  # 0 == not normalize tf   1== normalize tf
+type = True  # True == count term frequency  False== binary term frequency
+normalize = True  # False == not normalize tf   True== normalize tf
 TF_IDF_array = calculate_TF(type, normalize, main_text, TF_IDF_array)
 TF_IDF_array_query = calculate_TF(type, normalize, main_text_query, TF_IDF_array_query)
 print("calculating TF finished")
-TF_array_corpus = calculate_TF(2, 0, main_text_corpus, TF_array_corpus)
+TF_array_corpus = calculate_TF(type,normalize, main_text_corpus, TF_array_corpus)
 calculate_IDF(TF_array_corpus, main_text_corpus)
 print("calculating IDF finished")
 TF_IDF_array = calculate_TF_IDF(TF_IDF_array)
@@ -252,5 +252,5 @@ print("calculating TF_IDF finished")
 
 # evaluate queries using p@5 p@10 p@20
 print("start evaluation")
-precision = [5, 10, 20]
+precision = [5,10,20,30]
 evalquery(precision)
