@@ -1,14 +1,13 @@
 from nltk.tokenize import word_tokenize
 import nltk
 import numpy as np
-from scipy import spatial as spatial
 
 # this part defines path of data files
-corpusPath = 'Dataset\Corpus2.txt'
+corpusPath = 'Dataset\Corpus.txt'
 queryPath = 'Dataset\Query.txt'
 judgmentPath = 'Dataset\Judgement.txt'
 resultPath = 'Dataset\Result.txt'
-retrievalPath = 'Dataset\Retrieval2.txt'
+retrievalPath = 'Dataset\Retrieval.txt'
 
 
 # this func is used to parse the corpus file, it returns array of DID, Corpus, distinct words in all documents, and
@@ -70,9 +69,10 @@ def extractTag(path, tag):
             token += line
         if match2 == 0:
             begin = 0
-            token = token.replace("\n", "")
-            token = token.replace(".", " ")
-            token.replace("،", " ")
+            token = token.replace("\t", '')
+            token = token.replace("\n", '')
+            token = token.replace(".", '')
+            token.replace("،", '')
             values.append(token)
             token = ""
     return values
@@ -113,27 +113,28 @@ def parseJudgment(path):
 # this function calculates IDF for each word in corpus and stores it in array called IDF
 def calculate_IDF(distinct, main_text):
     IDF1 = np.zeros([len(distinct)])
+    l = 0
+    for j in range(len(main_text)): l += len(main_text[j])
     for i in range(len(distinct)):
         temp = 0
         for j in range(len(main_text)):
             temp += main_text[j].count(distinct[i])
-        if temp != 0: IDF1[i] = np.math.log(float(len(main_text)) / temp)
+        if temp != 0:
+            IDF1[i] = np.math.log(float(l) / temp)
     return IDF1
 
 
 # this function calculates term frequency and stores it array called TF_IDF_array
-# type true count - type false binary
 def calculate_TF_IDF(text):
-    TF_IDF_array = np.zeros([len(distinct), len(text)])
+    TF_IDF_array1 = np.zeros([len(text),len(distinct)])
     docID = 0
     for doc in text:
         words = (word_tokenize(doc))
-        l = len(words)
         for word in words:
             i, = np.where(distinct == word)
-            TF_IDF_array[i, docID] += IDF[i]
+            TF_IDF_array1[docID,i] += IDF[i]
         docID += 1
-    return TF_IDF_array
+    return TF_IDF_array1
 
 
 # this function changes a numerical matrix to a binary ones.
@@ -143,7 +144,8 @@ def change_to_binary(array):
     for i in array:
         counter2 = 0
         for j in i:
-            if j > 0: result[counter1, counter2] = IDF[counter2]
+            if j > 0:
+                result[counter1, counter2] = IDF[counter2]
             counter2 += 1
         counter1 += 1
     return result
@@ -178,25 +180,24 @@ def Query(type_distance, q_vec, array_doc):
     results = []
     index = 0
     for docID in DID:
-        doc_vec = array_doc[:, index]
+        doc_vec = array_doc[index]
         if type_distance == "cosine":
             results.append((docID, cosine_distance(q_vec, doc_vec)))
         elif type_distance == "jaccard":
             results.append((docID, jaccard_distance(q_vec, doc_vec)))
         index += 1
-    return sorted(results, key=lambda t: t[1])
+    return sorted(results, key=lambda t: t[1], reverse=True)
 
 
-# print 15 similar doc
+# print 15 similar doc with TF-IDF
 def part_a(array_query, array_doc):
     distance = ["cosine", "jaccard"]
     for d in distance:
         index = 0
         for q_vec in array_query:
-            print("15 doc similar to " + str(QID[index]) + "with " + str(d) + " distance is :")
+            print("15 doc similar to query " + str(QID[index]) + " with " + str(d) + " distance is :")
             print(Query(d, q_vec, array_doc)[:15])
             index += 1
-
 
 # # this func evaluates given results based on gold data with precision@k measure
 # def evaluation(result, gold, k):
@@ -254,8 +255,7 @@ main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(cor
 QID, title_query, main_text_query = parseQuery(queryPath)
 judge = parseJudgment(judgmentPath)
 print("parsing file finished")
-
-# report size of file
+# report some info about file
 n_docs = len(main_text)
 distinct = np.transpose(list(distinct))
 print("number of docs: " + str(n_docs))
@@ -264,27 +264,18 @@ print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
 print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
 print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
 
-# # calculate TF_IDF array for doc and query file
-# IDF = calculate_IDF(distinct, main_text_corpus)
-# print("calculating IDF finished")
-# TF_IDF_array = calculate_TF_IDF( main_text)
-# TF_IDF_array_query = calculate_TF_IDF( title_query)
-# print("calculating TF-IDF finished")
-
-# # evaluate queries using p@5 p@10 p@20
-# print("start evaluation")
-# precision = [5, 10]
-# evalquery(precision)
-
-# part a
-print("compute 15 similar doc with cosine distance")
+# compute TF-IDF array
 IDF = calculate_IDF(distinct, main_text_corpus)
 print("calculating IDF finished")
 TF_IDF_array = calculate_TF_IDF(main_text)
-TF_IDF_array_query = calculate_TF_IDF(title_query)
+TF_IDF_array_query = calculate_TF_IDF(main_text_query)
+print(np.count_nonzero(TF_IDF_array_query[:,0]))
 TF_IDF_array_binary = change_to_binary(TF_IDF_array)
 TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
 print("calculating TF-IDF finished")
+
+# part a
+print("<<<<<<<--------------- part a ------------------->>>>>>>")
 print("********numeric part********")
 part_a(TF_IDF_array_query, TF_IDF_array)
 print("********binary part********")
