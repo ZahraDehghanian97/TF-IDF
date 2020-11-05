@@ -6,7 +6,6 @@ import numpy as np
 corpusPath = 'Dataset\Corpus.txt'
 queryPath = 'Dataset\Query.txt'
 judgmentPath = 'Dataset\Judgement.txt'
-resultPath = 'Dataset\Result.txt'
 retrievalPath = 'Dataset\Retrieval.txt'
 result_APath = 'Dataset\judge_a.txt'
 result_BPath = 'Dataset\judge_b.txt'
@@ -196,9 +195,11 @@ def part_a(array_query, array_doc):
     distance = ["cosine", "jaccard"]
     for d in distance:
         index = 0
+        print(str(d))
         for q_vec in array_query:
-            print("15 doc similar to query " + str(QID[index]) + " with " + str(d) + " distance is :")
-            print(Query(d, q_vec, array_doc)[:15])
+            result =(Query(d, q_vec, array_doc)[:15])
+            for r in result:
+                print(str(QID[index]) + "\t" + str(r[0]))
             index += 1
 
 
@@ -337,41 +338,41 @@ def part_c(name, input):
             print(str(name[index]) + " : " + str(t[index]))
         counter+=1
 
-# # read files and parse them
-# main_text, DID, distinct, doc_length = parseText(retrievalPath)
-# main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
-# QID, title_query, main_text_query = parseQuery(queryPath)
-# print("parsing file finished")
-# # report some info about file
-# n_docs = len(main_text)
-# distinct = np.transpose(list(distinct))
-# print("number of docs: " + str(n_docs))
-# print("number of distinct words: " + str(len(distinct)))
-# print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
-# print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
-# print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
-#
-# # compute TF-IDF array
-# IDF = calculate_IDF(distinct, main_text_corpus)
-# print("calculating IDF finished")
-# TF_IDF_array = calculate_TF_IDF(main_text)
-# TF_IDF_array_query = calculate_TF_IDF(main_text_query)
-# print(np.count_nonzero(TF_IDF_array_query[:, 0]))
-# TF_IDF_array_binary = change_to_binary(TF_IDF_array)
-# TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
-# print("calculating TF-IDF finished")
-#
-# # part a
-# print("<<<<<<<--------------- part a ------------------->>>>>>>")
-# print("********numeric part********")
-# part_a(TF_IDF_array_query, TF_IDF_array)
-# print("********binary part********")
-# part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
-#
-# # part b
-# print("<<<<<<<--------------- part b ------------------->>>>>>>")
-# print("compute 15 similar with BM25 model")
-# part_b(TF_IDF_array_query, TF_IDF_array)
+# read files and parse them
+main_text, DID, distinct, doc_length = parseText(retrievalPath)
+main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
+QID, title_query, main_text_query = parseQuery(queryPath)
+print("parsing file finished")
+# report some info about file
+n_docs = len(main_text)
+distinct = np.transpose(list(distinct))
+print("number of docs: " + str(n_docs))
+print("number of distinct words: " + str(len(distinct)))
+print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
+print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
+print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
+
+# compute TF-IDF array
+IDF = calculate_IDF(distinct, main_text_corpus)
+print("calculating IDF finished")
+TF_IDF_array = calculate_TF_IDF(main_text)
+TF_IDF_array_query = calculate_TF_IDF(main_text_query)
+TF_IDF_array_binary = change_to_binary(TF_IDF_array)
+TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
+print("calculating TF-IDF finished")
+
+# part a
+print("<<<<<<<--------------- part a ------------------->>>>>>>")
+print("compute 15 similar with TF-IDF model")
+print("********numeric part********")
+part_a(TF_IDF_array_query, TF_IDF_array)
+print("********binary part********")
+part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
+
+# part b
+print("<<<<<<<--------------- part b ------------------->>>>>>>")
+print("compute 15 similar with BM25 model")
+part_b(TF_IDF_array_query, TF_IDF_array)
 
 # part c
 print("<<<<<<<--------------- part c ------------------->>>>>>>")
