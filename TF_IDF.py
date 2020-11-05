@@ -126,13 +126,13 @@ def calculate_IDF(distinct, main_text):
 
 # this function calculates term frequency and stores it array called TF_IDF_array
 def calculate_TF_IDF(text):
-    TF_IDF_array1 = np.zeros([len(text),len(distinct)])
+    TF_IDF_array1 = np.zeros([len(text), len(distinct)])
     docID = 0
     for doc in text:
         words = (word_tokenize(doc))
         for word in words:
             i, = np.where(distinct == word)
-            TF_IDF_array1[docID,i] += IDF[i]
+            TF_IDF_array1[docID, i] += IDF[i]
         docID += 1
     return TF_IDF_array1
 
@@ -198,6 +198,44 @@ def part_a(array_query, array_doc):
             print("15 doc similar to query " + str(QID[index]) + " with " + str(d) + " distance is :")
             print(Query(d, q_vec, array_doc)[:15])
             index += 1
+
+
+# this function run BM25 algorithm and return sorted list of doc
+def BM25(b, k, q_vec, array_doc):
+    results = []
+    index = 0
+    l_avg = np.average(doc_length)
+    kplus = k+1
+    k2 = k* (1-b)
+    index_nonzero_query = np.nonzero(q_vec)[0]
+    for docID in DID:
+        doc_vec = array_doc[index]
+        temp = doc_length[index]
+        lastk = k2+ b*(temp/l_avg)
+        result = 0
+        for j in index_nonzero_query :
+            r = kplus * doc_vec[j]
+            t = doc_vec[j]/IDF[j]
+            lastk += t
+            r /= lastk
+            result+=r
+        results.append((docID, result))
+        index += 1
+    return sorted(results, key=lambda t: t[1], reverse=True)
+
+
+# find 15 similar doc with BM25
+def part_b(array_query, array_doc):
+    b = [0.5, 0.75, 1]
+    k = [1.2, 1.5, 2]
+    for b1 in b:
+        for k1 in k :
+            index = 0
+            for q_vec in array_query:
+                print("15 similar to query  " + str(QID[index]) + " with b = " + str(b1) + " k = " + str(k1))
+                print(BM25(b1, k1, q_vec, array_doc)[:15])
+                index+=1
+
 
 # # this func evaluates given results based on gold data with precision@k measure
 # def evaluation(result, gold, k):
@@ -269,14 +307,18 @@ IDF = calculate_IDF(distinct, main_text_corpus)
 print("calculating IDF finished")
 TF_IDF_array = calculate_TF_IDF(main_text)
 TF_IDF_array_query = calculate_TF_IDF(main_text_query)
-print(np.count_nonzero(TF_IDF_array_query[:,0]))
+print(np.count_nonzero(TF_IDF_array_query[:, 0]))
 TF_IDF_array_binary = change_to_binary(TF_IDF_array)
 TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
 print("calculating TF-IDF finished")
 
-# part a
-print("<<<<<<<--------------- part a ------------------->>>>>>>")
-print("********numeric part********")
-part_a(TF_IDF_array_query, TF_IDF_array)
-print("********binary part********")
-part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
+# # part a
+# print("<<<<<<<--------------- part a ------------------->>>>>>>")
+# print("********numeric part********")
+# part_a(TF_IDF_array_query, TF_IDF_array)
+# print("********binary part********")
+# part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
+
+# part b
+print("<<<<<<<--------------- part b ------------------->>>>>>>")
+part_b(TF_IDF_array_query, TF_IDF_array)
