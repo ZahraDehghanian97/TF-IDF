@@ -8,6 +8,8 @@ queryPath = 'Dataset\Query.txt'
 judgmentPath = 'Dataset\Judgement.txt'
 resultPath = 'Dataset\Result.txt'
 retrievalPath = 'Dataset\Retrieval.txt'
+result_APath = 'Dataset\judge_a.txt'
+result_BPath = 'Dataset\judge_b.txt'
 
 
 # this func is used to parse the corpus file, it returns array of DID, Corpus, distinct words in all documents, and
@@ -205,20 +207,20 @@ def BM25(b, k, q_vec, array_doc):
     results = []
     index = 0
     l_avg = np.average(doc_length)
-    kplus = k+1
-    k2 = k* (1-b)
+    kplus = k + 1
+    k2 = k * (1 - b)
     index_nonzero_query = np.nonzero(q_vec)[0]
     for docID in DID:
         doc_vec = array_doc[index]
         temp = doc_length[index]
-        lastk = k2+ b*(temp/l_avg)
+        lastk = k2 + b * (temp / l_avg)
         result = 0
-        for j in index_nonzero_query :
+        for j in index_nonzero_query:
             r = kplus * doc_vec[j]
-            t = doc_vec[j]/IDF[j]
+            t = doc_vec[j] / IDF[j]
             lastk += t
             r /= lastk
-            result+=r
+            result += r
         results.append((docID, result))
         index += 1
     return sorted(results, key=lambda t: t[1], reverse=True)
@@ -229,71 +231,115 @@ def part_b(array_query, array_doc):
     b = [0.5, 0.75, 1]
     k = [1.2, 1.5, 2]
     for b1 in b:
-        for k1 in k :
+        for k1 in k:
             index = 0
             print("b = " + str(b1) + " k = " + str(k1))
             for q_vec in array_query:
                 result = (BM25(b1, k1, q_vec, array_doc)[:15])
-                for r in result :
-                    print(str(QID[index])+"\t"+str(r[0]))
-                index+=1
+                for r in result:
+                    print(str(QID[index]) + "\t" + str(r[0]))
+                index += 1
 
 
-# # this func evaluates given results based on gold data with precision@k measure
-# def evaluation(result, gold, k):
-#     tmp = 0
-#     if k > len(result): k = len(result)
-#     for i in range(0, k):
-#         if result[i][0] in gold:
-#             tmp += 1
-#         print(str(result[i][0]))
-#     return (tmp / k)
-#
-#
-# # this func returns the gold data related to given QID
-# def getGold(QID):
-#     row = np.shape(judge)[0]
-#     goldData = []
-#     for i in range(0, row):
-#         if QID == judge[i][0]:
-#             goldData.append(judge[i][1])
-#     return goldData
-#
-#
-# # this func writes results to given file
-# def writeToFile(f, res):
-#     f.write("[")
-#     for ID, precision in res:
-#         f.write("\n".join(["(%s , %s)" % (ID, precision)]))
-#     f.write("]\n")
-#     return
-#
-#
-# # this function evaluates set of given queries with given parameters which are used as k in precision@k measure
-# # and writes results to 'pathToWriteResults' file
-# def evalquery(type_distance, precisions):
-#     query_ID = 0
-#     f = open(resultPath, 'a')
-#     counter_query = 0
-#     for query in main_text_query:
-#         res = Query(type_distance, query, TF_IDF_array)
-#         counter_query += 1
-#         for precision in precisions:
-#             precisionAtK = evaluation(res, getGold(QID[query_ID]), precision)
-#             template = "precision @ %s  for QID %s  is: %s \n"
-#             f.write("\n")
-#             print(template % (precision, QID[query_ID], precisionAtK))
-#             f.write(template % (precision, QID[query_ID], precisionAtK))
-#             writeToFile(f, res[:precision])
-#         query_ID += 1
-#     return
+# this function read result of each part and put them in arrays
+def parseResult(path):
+    result = []
+    file = open(path)
+    index = 0
+    name = []
+    group = []
+    for line in file:
+        if index == 76:
+            index = 0
+            result.append(group)
+        if index == 0:
+            name.append(line)
+            group = []
+        else:
+            group.append(nltk.word_tokenize(line))
+        index += 1
+    result.append(group)
+    return name, result
 
+
+# this func returns the gold data related to given QID
+def getID(list, QID):
+    Data = []
+    for i in range(0,len(list)):
+        if QID == int(list[i][0]):
+            Data.append(list[i][1])
+    return Data
+
+
+# this function evaluates precision of list 
+def precision(list, p):
+    result = []
+    for qid in QID:
+        my_result = getID(list, qid)
+        gold_result = getID(judge, qid)
+        tmp = 0
+        for i in range(0, p):
+            if my_result[i] in gold_result:
+                tmp += 1
+        result.append(tmp / p)
+    return result
+
+
+# this function compute MRR of list (sigma (1/first place relevant doc appear))
+def MRR(list):
+    result = 0
+    for qid in QID:
+        my_result = getID(list, qid)
+        gold_result = getID(judge, qid)
+        for i in range(0, len(my_result)):
+            if my_result[i] in gold_result:
+                result += (1 / (i + 1))
+                break
+    return result / len(QID)
+
+
+# this function return Mean Average Precision for list
+def MAP(list):
+    result = 0
+    for qid in QID:
+        temp_result = 0
+        my_result = getID(list, qid)
+        gold_result = getID(judge, qid)
+        index = 1
+        true_match = 1
+        for i in range(0, len(my_result)):
+            if my_result[i] in gold_result:
+                temp_result += (true_match / index)
+                true_match += 1
+            index += 1
+        result += (temp_result / true_match)
+    return result / len(QID)
+
+
+# this function compute p@5 p@10 MAP MRR
+def part_c(name, input):
+    p_5 = []
+    p_10 = []
+    map = []
+    mrr = []
+    for group in input:
+        p_5.append(precision(group, 5))
+        p_10.append(precision(group, 10))
+        map.append(MAP(group))
+        mrr.append(MRR(group))
+    temp = [p_5, p_10, map, mrr]
+    name_metrics = ["p@5","p@10","MAP","MRR"]
+    counter =0
+    for t in temp:
+        print("<<------------ "+str(name_metrics[counter])+" ------------>>")
+        for index in range(len(name)):
+            print(str(name[index]) + " : " + str(t[index]))
+        counter+=1
 
 # read files and parse them
 main_text, DID, distinct, doc_length = parseText(retrievalPath)
 main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
 QID, title_query, main_text_query = parseQuery(queryPath)
-judge = parseJudgment(judgmentPath)
 print("parsing file finished")
 # report some info about file
 n_docs = len(main_text)
@@ -314,14 +360,27 @@ TF_IDF_array_binary = change_to_binary(TF_IDF_array)
 TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
 print("calculating TF-IDF finished")
 
-# # part a
-# print("<<<<<<<--------------- part a ------------------->>>>>>>")
-# print("********numeric part********")
-# part_a(TF_IDF_array_query, TF_IDF_array)
-# print("********binary part********")
-# part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
+# part a
+print("<<<<<<<--------------- part a ------------------->>>>>>>")
+print("********numeric part********")
+part_a(TF_IDF_array_query, TF_IDF_array)
+print("********binary part********")
+part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
 
 # part b
 print("<<<<<<<--------------- part b ------------------->>>>>>>")
 print("compute 15 similar with BM25 model")
 part_b(TF_IDF_array_query, TF_IDF_array)
+
+# part c
+print("<<<<<<<--------------- part c ------------------->>>>>>>")
+print("evaluation metrics : p@5 p@10 MRR MAP")
+print("compute metrics for result of part a : ")
+name_a, result_a = parseResult(result_APath)
+name_b, result_b = parseResult(result_BPath)
+QID = [6,7,8,9,10]
+judge = parseJudgment(judgmentPath)
+print("analyse result of part A :")
+part_c(name_a, result_a)
+print("analyse result of part B :")
+part_c(name_b,result_b)
