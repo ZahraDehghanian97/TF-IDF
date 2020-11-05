@@ -231,9 +231,11 @@ def part_b(array_query, array_doc):
     for b1 in b:
         for k1 in k :
             index = 0
+            print("b = " + str(b1) + " k = " + str(k1))
             for q_vec in array_query:
-                print("15 similar to query  " + str(QID[index]) + " with b = " + str(b1) + " k = " + str(k1))
-                print(BM25(b1, k1, q_vec, array_doc)[:15])
+                result = (BM25(b1, k1, q_vec, array_doc)[:15])
+                for r in result :
+                    print(str(QID[index])+"\t"+str(r[0]))
                 index+=1
 
 
@@ -321,4 +323,5 @@ print("calculating TF-IDF finished")
 
 # part b
 print("<<<<<<<--------------- part b ------------------->>>>>>>")
+print("compute 15 similar with BM25 model")
 part_b(TF_IDF_array_query, TF_IDF_array)
