@@ -1,0 +1,72 @@
+C:\Users\zdehg\AppData\Local\Programs\Python\Python37\python.exe "D:/univesity/foqelisans/information retrieval/HW1_98131059/TF_IDF.py"
+C:\Users\zdehg\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\externals\joblib\externals\cloudpickle\cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+<<<<<<<--------------- part c ------------------->>>>>>>
+evaluation metrics : p@5 p@10 MRR MAP
+compute metrics for result of part a : 
+analyse result of part A :
+<<------------ p@5 ------------>>
+numeric  cosine : [0.3333, 0.4667, 0.9333, 0.3333, 0.9333]
+numeric jaccard : [0.0, 0.0, 0.0, 0.0, 0.0]
+binary   cosine : [0.2, 0.4, 0.0, 0.0667, 0.7333]
+binary  jaccard : [0.0667, 0.2, 0.0, 0.0, 0.6667]
+<<------------ p@10 ------------>>
+numeric  cosine : [0.4, 0.4, 1.0, 0.3, 1.0]
+numeric jaccard : [0.0, 0.0, 0.0, 0.0, 0.0]
+binary   cosine : [0.2, 0.5, 0.0, 0.1, 0.6]
+binary  jaccard : [0.1, 0.2, 0.0, 0.0, 0.6]
+<<------------ MAP ------------>>
+numeric  cosine : 0.5865
+numeric jaccard : 0.0
+binary   cosine : 0.2766
+binary  jaccard : 0.2478
+<<------------ MRR ------------>>
+numeric  cosine : 0.6167
+numeric jaccard : 0.0
+binary   cosine : 0.465
+binary  jaccard : 0.4222
+
+
+analyse result of part B :
+<<------------ p@5 ------------>>
+b = 0.50 k = 1.2 : [0.0667, 0.6667, 0.0667, 0.0, 0.2667]
+b = 0.50 k = 1.5 : [0.0667, 0.6, 0.0667, 0.0, 0.2667]
+b = 0.50 k = 2.0 : [0.0667, 0.4667, 0.0667, 0.0, 0.2]
+b = 0.75 k = 1.2 : [0.0667, 0.6667, 0.0667, 0.0, 0.3333]
+b = 0.75 k = 1.5 : [0.0667, 0.6667, 0.0667, 0.0, 0.3333]
+b = 0.75 k = 2.0 : [0.0667, 0.6667, 0.0667, 0.0, 0.4]
+b = 1.00 k = 1.2 : [0.0667, 0.6, 0.0667, 0.0, 0.4667]
+b = 1.00 k = 1.5 : [0.0667, 0.6, 0.0667, 0.0, 0.4667]
+b = 1.00 k = 2.0 : [0.0667, 0.6, 0.0667, 0.0, 0.4667]
+<<------------ p@10 ------------>>
+b = 0.50 k = 1.2 : [0.1, 0.6, 0.1, 0.0, 0.2]
+b = 0.50 k = 1.5 : [0.1, 0.5, 0.0, 0.0, 0.1]
+b = 0.50 k = 2.0 : [0.1, 0.5, 0.0, 0.0, 0.1]
+b = 0.75 k = 1.2 : [0.0, 0.7, 0.1, 0.0, 0.4]
+b = 0.75 k = 1.5 : [0.1, 0.7, 0.1, 0.0, 0.5]
+b = 0.75 k = 2.0 : [0.1, 0.6, 0.1, 0.0, 0.4]
+b = 1.00 k = 1.2 : [0.1, 0.7, 0.0, 0.0, 0.4]
+b = 1.00 k = 1.5 : [0.1, 0.7, 0.0, 0.0, 0.4]
+b = 1.00 k = 2.0 : [0.1, 0.7, 0.0, 0.0, 0.4]
+<<------------ MAP ------------>>
+b = 0.50 k = 1.2 : 0.1827
+b = 0.50 k = 1.5 : 0.165
+b = 0.50 k = 2.0 : 0.1557
+b = 0.75 k = 1.2 : 0.2151
+b = 0.75 k = 1.5 : 0.2184
+b = 0.75 k = 2.0 : 0.2189
+b = 1.00 k = 1.2 : 0.1897
+b = 1.00 k = 1.5 : 0.1897
+b = 1.00 k = 2.0 : 0.1897
+<<------------ MRR ------------>>
+b = 0.50 k = 1.2 : 0.1758
+b = 0.50 k = 1.5 : 0.1767
+b = 0.50 k = 2.0 : 0.1754
+b = 0.75 k = 1.2 : 0.1968
+b = 0.75 k = 1.5 : 0.1972
+b = 0.75 k = 2.0 : 0.2119
+b = 1.00 k = 1.2 : 0.1782
+b = 1.00 k = 1.5 : 0.1782
+b = 1.00 k = 2.0 : 0.1782
+
+Process finished with exit code 0
