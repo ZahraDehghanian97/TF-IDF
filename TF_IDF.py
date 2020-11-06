@@ -3,18 +3,18 @@ import nltk
 import numpy as np
 
 # this part defines path of data files
-corpusPath = 'Dataset\Corpus.txt'
-queryPath = 'Dataset\Query.txt'
-judgmentPath = 'Dataset\Judgement.txt'
-retrievalPath = 'Dataset\Retrieval.txt'
-result_APath = 'Dataset\judge_a.txt'
-result_BPath = 'Dataset\judge_b.txt'
+corpus_path = 'Dataset\Corpus.txt'
+query_path = 'Dataset\Query.txt'
+judgment_path = 'Dataset\Judgement.txt'
+retrieval_path = 'Dataset\Retrieval.txt'
+result_A_path = 'Dataset\judge_a.txt'
+result_B_path = 'Dataset\judge_b.txt'
 
 
 # this func is used to parse the corpus file, it returns array of DID, Corpus, distinct words in all documents, and
 # count of words in each document
 
-def parseText(path):
+def parse_text(path):
     file = open(path, encoding='utf-8')
     lineNum = 0
     list = []
@@ -54,7 +54,7 @@ def parseText(path):
 
 
 # this function is used to extract each tag. given the name of tag it returns all the data within it
-def extractTag(path, tag):
+def find_tag(path, tag):
     begin_str = '<' + tag + '>'
     end_str = '</' + tag + '>'
     token = ""
@@ -80,7 +80,7 @@ def extractTag(path, tag):
 
 
 # this func combine arrays of str
-def combineArrays(title, description, narrative):
+def combine_three_array(title, description, narrative):
     res = []
     tmp = len(title)
     for i in range(0, tmp):
@@ -92,17 +92,17 @@ def combineArrays(title, description, narrative):
 
 
 # this function is used to parse Query file
-def parseQuery(queryPath):
-    QID = extractTag(queryPath, 'QID')
-    title = extractTag(queryPath, 'title')
-    description = extractTag(queryPath, 'description')
-    narrative = extractTag(queryPath, 'narrative')
-    main_text_query = combineArrays(title, description, narrative)
-    return QID, title, main_text_query
+def parse_query(Path):
+    QID = find_tag(Path, 'QID')
+    title = find_tag(Path, 'title')
+    description = find_tag(Path, 'description')
+    narrative = find_tag(Path, 'narrative')
+    text_query = combine_three_array(title, description, narrative)
+    return QID, title, text_query
 
 
 # this func reads judgments from given file
-def parseJudgment(path):
+def parse_judgment(path):
     judges = []
     file = open(path, encoding='utf-8')
     for line in file:
@@ -152,15 +152,12 @@ def change_to_binary(array):
     return result
 
 
-# this func returns norm of an array
-def norm(a):
-    return np.math.sqrt(np.dot(a, a))
-
-
 # this func calculates cosine distance of two arrays
 def cosine_distance(a, b):
-    if norm(a) > 0 and norm(b) > 0:
-        return np.dot(a, b) / (norm(a) * norm(b))
+    norm2a = np.math.sqrt(np.dot(a, a))
+    norm2b = np.math.sqrt(np.dot(b, b))
+    if norm2a > 0 and norm2b > 0:
+        return np.dot(a, b) / (norm2a * norm2b)
     else:
         return 0
 
@@ -176,8 +173,7 @@ def jaccard_distance(a, b):
 
 
 # this function returns the related documents to given query terms
-def Query(type_distance, q_vec, array_doc):
-    # q_vec = array_query[:, counter]
+def find_similar_query(type_distance, q_vec, array_doc):
     results = []
     index = 0
     for docID in DID:
@@ -197,7 +193,7 @@ def part_a(array_query, array_doc):
         index = 0
         print(str(d))
         for q_vec in array_query:
-            result =(Query(d, q_vec, array_doc)[:15])
+            result = (find_similar_query(d, q_vec, array_doc)[:15])
             for r in result:
                 print(str(QID[index]) + "\t" + str(r[0]))
             index += 1
@@ -243,7 +239,7 @@ def part_b(array_query, array_doc):
 
 
 # this function read result of each part and put them in arrays
-def parseResult(path):
+def parse_result(path):
     result = []
     file = open(path)
     index = 0
@@ -254,7 +250,7 @@ def parseResult(path):
             index = 0
             result.append(group)
         if index == 0:
-            t = line.replace("\n",'')
+            t = line.replace("\n", '')
             name.append(t)
             group = []
         else:
@@ -265,9 +261,9 @@ def parseResult(path):
 
 
 # this func returns the gold data related to given QID
-def getID(list, QID):
+def get_ID(list, QID):
     Data = []
-    for i in range(0,len(list)):
+    for i in range(0, len(list)):
         if QID == int(list[i][0]):
             d = list[i][1]
             Data.append(d.lower())
@@ -278,13 +274,13 @@ def getID(list, QID):
 def precision(list, p):
     result = []
     for qid in QID:
-        my_result = getID(list, qid)
-        gold_result = getID(judge, qid)
+        my_result = get_ID(list, qid)
+        gold_result = get_ID(judge, qid)
         tmp = 0
         for i in range(0, p):
             if my_result[i] in gold_result:
                 tmp += 1
-        result.append(round(tmp / p,4))
+        result.append(round(tmp / p, 4))
     return result
 
 
@@ -292,13 +288,13 @@ def precision(list, p):
 def MRR(list):
     result = 0
     for qid in QID:
-        my_result = getID(list, qid)
-        gold_result = getID(judge, qid)
+        my_result = get_ID(list, qid)
+        gold_result = get_ID(judge, qid)
         for i in range(0, len(my_result)):
             if my_result[i] in gold_result:
                 result += (1 / (i + 1))
                 break
-    return round(result / len(QID),4)
+    return round(result / len(QID), 4)
 
 
 # this function return Mean Average Precision for list
@@ -306,8 +302,8 @@ def MAP(list):
     result = 0
     for qid in QID:
         temp_result = 0
-        my_result = getID(list, qid)
-        gold_result = getID(judge, qid)
+        my_result = get_ID(list, qid)
+        gold_result = get_ID(judge, qid)
         index = 1
         true_match = 1
         for i in range(0, len(my_result)):
@@ -316,7 +312,7 @@ def MAP(list):
                 true_match += 1
             index += 1
         result += (temp_result / true_match)
-    return round(result / len(QID),4)
+    return round(result / len(QID), 4)
 
 
 # this function compute p@5 p@10 MAP MRR
@@ -331,59 +327,60 @@ def part_c(name, input):
         map.append(MAP(group))
         mrr.append(MRR(group))
     temp = [p_5, p_10, map, mrr]
-    name_metrics = ["p@5","p@10","MAP","MRR"]
-    counter =0
+    name_metrics = ["p@5", "p@10", "MAP", "MRR"]
+    counter = 0
     for t in temp:
-        print("<<------------ "+str(name_metrics[counter])+" ------------>>")
+        print("<<------------ " + str(name_metrics[counter]) + " ------------>>")
         for index in range(len(name)):
             print(str(name[index]) + " : " + str(t[index]))
-        counter+=1
-#
-# # read files and parse them
-# main_text, DID, distinct, doc_length = parseText(retrievalPath)
-# main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
-# QID, title_query, main_text_query = parseQuery(queryPath)
-# print("parsing file finished")
-# # report some info about file
-# n_docs = len(main_text)
-# distinct = np.transpose(list(distinct))
-# print("number of docs: " + str(n_docs))
-# print("number of distinct words: " + str(len(distinct)))
-# print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
-# print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
-# print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
-#
-# # compute TF-IDF array
-# IDF = calculate_IDF(distinct, main_text_corpus)
-# print("calculating IDF finished")
-# TF_IDF_array = calculate_TF_IDF(main_text)
-# TF_IDF_array_query = calculate_TF_IDF(main_text_query)
-# TF_IDF_array_binary = change_to_binary(TF_IDF_array)
-# TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
-# print("calculating TF-IDF finished")
-#
-# # part a
-# print("<<<<<<<--------------- part a ------------------->>>>>>>")
-# print("compute 15 similar with TF-IDF model")
-# print("********numeric part********")
-# part_a(TF_IDF_array_query, TF_IDF_array)
-# print("********binary part********")
-# part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
-#
-# # part b
-# print("<<<<<<<--------------- part b ------------------->>>>>>>")
-# print("compute 15 similar with BM25 model")
-# part_b(TF_IDF_array_query, TF_IDF_array)
+        counter += 1
+
+
+# read files and parse them
+main_text, DID, distinct, doc_length = parse_text(retrieval_path)
+main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parse_text(corpus_path)
+QID, title_query, main_text_query = parse_query(query_path)
+print("parsing file finished")
+
+# report some info about file
+n_docs = len(main_text)
+distinct = np.transpose(list(distinct))
+print("number of docs: " + str(n_docs))
+print("number of distinct words: " + str(len(distinct)))
+print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
+print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
+print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
+
+# compute TF-IDF array
+IDF = calculate_IDF(distinct, main_text_corpus)
+print("calculating IDF finished")
+TF_IDF_array = calculate_TF_IDF(main_text)
+TF_IDF_array_query = calculate_TF_IDF(main_text_query)
+TF_IDF_array_binary = change_to_binary(TF_IDF_array)
+TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
+print("calculating TF-IDF finished")
+
+# part a
+print("<<<<<<<--------------- part a ------------------->>>>>>>")
+print("compute 15 similar with TF-IDF model")
+print("********numeric part********")
+part_a(TF_IDF_array_query, TF_IDF_array)
+print("********binary part********")
+part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
+
+# part b
+print("<<<<<<<--------------- part b ------------------->>>>>>>")
+print("compute 15 similar with BM25 model")
+part_b(TF_IDF_array_query, TF_IDF_array)
 
 # part c
 print("<<<<<<<--------------- part c ------------------->>>>>>>")
 print("evaluation metrics : p@5 p@10 MRR MAP")
 print("compute metrics for result of part a : ")
-name_a, result_a = parseResult(result_APath)
-name_b, result_b = parseResult(result_BPath)
-QID = [6,7,8,9,10]
-judge = parseJudgment(judgmentPath)
+name_a, result_a = parse_result(result_A_path)
+name_b, result_b = parse_result(result_B_path)
+judge = parse_judgment(judgment_path)
 print("analyse result of part A :")
 part_c(name_a, result_a)
 print("\n\nanalyse result of part B :")
-part_c(name_b,result_b)
+part_c(name_b, result_b)
