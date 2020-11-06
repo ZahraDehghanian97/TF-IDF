@@ -1,4 +1,4 @@
-numeric cosine
+numeric  cosine
 6	41867s1
 6	45702s7
 6	5318s1
@@ -150,7 +150,7 @@ numeric jaccard
 10	2755s1
 10	3456s1
 10	53012s3
-binary cosine
+binary   cosine
 6	3313s1
 6	2166s1
 6	766s1
@@ -226,7 +226,7 @@ binary cosine
 10	41921s1
 10	42242s3
 10	42196s1
-binary jaccard
+binary  jaccard
 6	2166s1
 6	3347s1
 6	2250s1

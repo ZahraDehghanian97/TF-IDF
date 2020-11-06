@@ -74,7 +74,7 @@ def extractTag(path, tag):
             token = token.replace("\n", '')
             token = token.replace(".", '')
             token.replace("،", '')
-            values.append(token)
+            values.append(token.lower())
             token = ""
     return values
 
@@ -269,7 +269,8 @@ def getID(list, QID):
     Data = []
     for i in range(0,len(list)):
         if QID == int(list[i][0]):
-            Data.append(list[i][1])
+            d = list[i][1]
+            Data.append(d.lower())
     return Data
 
 
@@ -283,7 +284,7 @@ def precision(list, p):
         for i in range(0, p):
             if my_result[i] in gold_result:
                 tmp += 1
-        result.append(tmp / p)
+        result.append(round(tmp / p,4))
     return result
 
 
@@ -297,7 +298,7 @@ def MRR(list):
             if my_result[i] in gold_result:
                 result += (1 / (i + 1))
                 break
-    return result / len(QID)
+    return round(result / len(QID),4)
 
 
 # this function return Mean Average Precision for list
@@ -315,7 +316,7 @@ def MAP(list):
                 true_match += 1
             index += 1
         result += (temp_result / true_match)
-    return result / len(QID)
+    return round(result / len(QID),4)
 
 
 # this function compute p@5 p@10 MAP MRR
@@ -325,7 +326,7 @@ def part_c(name, input):
     map = []
     mrr = []
     for group in input:
-        p_5.append(precision(group, 5))
+        p_5.append(precision(group, 15))
         p_10.append(precision(group, 10))
         map.append(MAP(group))
         mrr.append(MRR(group))
@@ -337,42 +338,42 @@ def part_c(name, input):
         for index in range(len(name)):
             print(str(name[index]) + " : " + str(t[index]))
         counter+=1
-
-# read files and parse them
-main_text, DID, distinct, doc_length = parseText(retrievalPath)
-main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
-QID, title_query, main_text_query = parseQuery(queryPath)
-print("parsing file finished")
-# report some info about file
-n_docs = len(main_text)
-distinct = np.transpose(list(distinct))
-print("number of docs: " + str(n_docs))
-print("number of distinct words: " + str(len(distinct)))
-print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
-print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
-print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
-
-# compute TF-IDF array
-IDF = calculate_IDF(distinct, main_text_corpus)
-print("calculating IDF finished")
-TF_IDF_array = calculate_TF_IDF(main_text)
-TF_IDF_array_query = calculate_TF_IDF(main_text_query)
-TF_IDF_array_binary = change_to_binary(TF_IDF_array)
-TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
-print("calculating TF-IDF finished")
-
-# part a
-print("<<<<<<<--------------- part a ------------------->>>>>>>")
-print("compute 15 similar with TF-IDF model")
-print("********numeric part********")
-part_a(TF_IDF_array_query, TF_IDF_array)
-print("********binary part********")
-part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
-
-# part b
-print("<<<<<<<--------------- part b ------------------->>>>>>>")
-print("compute 15 similar with BM25 model")
-part_b(TF_IDF_array_query, TF_IDF_array)
+#
+# # read files and parse them
+# main_text, DID, distinct, doc_length = parseText(retrievalPath)
+# main_text_corpus, DID_corpus, distinct_corpus, doc_length_corpus = parseText(corpusPath)
+# QID, title_query, main_text_query = parseQuery(queryPath)
+# print("parsing file finished")
+# # report some info about file
+# n_docs = len(main_text)
+# distinct = np.transpose(list(distinct))
+# print("number of docs: " + str(n_docs))
+# print("number of distinct words: " + str(len(distinct)))
+# print("avg length of docs: " + str(sum(doc_length) / len(doc_length)))
+# print("doc with max length: " + str(DID[doc_length.index(max(doc_length))]))
+# print("doc with min length: " + str(DID[doc_length.index(min(doc_length))]))
+#
+# # compute TF-IDF array
+# IDF = calculate_IDF(distinct, main_text_corpus)
+# print("calculating IDF finished")
+# TF_IDF_array = calculate_TF_IDF(main_text)
+# TF_IDF_array_query = calculate_TF_IDF(main_text_query)
+# TF_IDF_array_binary = change_to_binary(TF_IDF_array)
+# TF_IDF_array_query_binary = change_to_binary(TF_IDF_array_query)
+# print("calculating TF-IDF finished")
+#
+# # part a
+# print("<<<<<<<--------------- part a ------------------->>>>>>>")
+# print("compute 15 similar with TF-IDF model")
+# print("********numeric part********")
+# part_a(TF_IDF_array_query, TF_IDF_array)
+# print("********binary part********")
+# part_a(TF_IDF_array_query_binary, TF_IDF_array_binary)
+#
+# # part b
+# print("<<<<<<<--------------- part b ------------------->>>>>>>")
+# print("compute 15 similar with BM25 model")
+# part_b(TF_IDF_array_query, TF_IDF_array)
 
 # part c
 print("<<<<<<<--------------- part c ------------------->>>>>>>")
@@ -384,5 +385,5 @@ QID = [6,7,8,9,10]
 judge = parseJudgment(judgmentPath)
 print("analyse result of part A :")
 part_c(name_a, result_a)
-print("analyse result of part B :")
+print("\n\nanalyse result of part B :")
 part_c(name_b,result_b)
